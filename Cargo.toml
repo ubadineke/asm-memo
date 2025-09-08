@@ -6,8 +6,13 @@ edition = "2021"
 [dependencies]
 
 [dev-dependencies]
-mollusk-svm = "0.4.1"
+mollusk-svm = "0.5.1"
+mollusk-svm-bencher = "0.5.1"
 solana-sdk = "2.2.1"
 
 [features]
 test-sbf = []
+
+[lib]
+crate-type = ["lib", "cdylib"]
+
